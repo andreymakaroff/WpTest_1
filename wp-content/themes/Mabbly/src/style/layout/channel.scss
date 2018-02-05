@@ -1,0 +1,53 @@
+.channel {
+  width: 80%;
+  margin:125px auto 0;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  &__title {
+    width: 27%;
+    font-size: 40px;
+    line-height: 65px;
+    font-weight: 700;
+    color: $title-color;
+    @media screen and (max-width: 1440px){
+      width: 35%;
+    }
+    @media screen and (max-width: 960px){
+      width: 50%;
+    }
+    @media screen and (max-width: 768px){
+      width: 90%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 640px){
+      font-size: 30px;
+      line-height: 45px;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 14px;
+    height: 14px;
+    background: url("../img/redDot.svg") no-repeat;
+    margin-left: 2px;
+    margin-bottom: 13px;
+  }
+  &__description {
+    width: 34%;
+    font-size: 20px;
+    line-height: 36px;
+    color: $title-color;
+    opacity: 0.4;
+    @media screen and (max-width: 960px){
+      width: 45%;
+    }
+    @media screen and (max-width: 768px){
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

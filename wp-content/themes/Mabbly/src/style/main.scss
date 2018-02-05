@@ -1,0 +1,22 @@
+@import "base/normalize";
+@import "base/variables";
+@import "base/fonts";
+@import "base/main";
+@import "base/mixins";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
+
+@import "layout/menu";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/work";
+@import "layout/about";
+@import "layout/partners";
+@import "layout/channel";
+@import "layout/projects";
+@import "layout/project";
+@import "layout/sponsor";
+@import "layout/culture";
+@import "layout/form";
+@import "layout/footer";

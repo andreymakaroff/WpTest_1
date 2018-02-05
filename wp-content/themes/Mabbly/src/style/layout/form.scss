@@ -1,0 +1,62 @@
+.form {
+  margin-top: 50px;
+  width: 620px;
+  @media screen and (max-width: 1200px){
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 768px){
+    width: 90%;
+    margin:50px auto 30px;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    color: $main-bg;
+    width: 100%;
+    margin-bottom: 50px;
+    @media screen and (max-width: 768px){
+      text-align: center;
+    }
+    @media screen and (max-width: 425px){
+      font-size: 36px;
+    }
+
+  }
+  &__field {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(250,250,250,0.3);
+    background: none;
+    color: $main-bg;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    padding:16px 0;
+    @include placeholder-color($placeholder-color);
+  }
+  &__btn {
+    display: block;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    background: $main-bg;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $mainSection-bg;
+    padding:22px 55px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    &:hover {
+      border: 1px solid $main-bg;
+      background: $mainSection-bg;
+      color: $main-bg;
+    }
+    @media screen and (max-width: 768px){
+      margin:40px auto 0;
+    }
+  }
+}

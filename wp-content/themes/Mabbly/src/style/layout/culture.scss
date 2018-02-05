@@ -1,0 +1,134 @@
+.culture {
+  width: 80%;
+  margin:246px auto 110px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1200px){
+    margin:200px auto 240px;
+  }
+  &__gallery {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (max-width: 1400px){
+      width: 45%;
+    }
+    @media screen and (max-width: 1200px){
+      margin-bottom:-20%;
+    }
+    @media screen and (max-width: 768px){
+      width: 100%;
+      order: 1;
+    }
+  }
+  &__item {
+    &.rightSide {
+      margin-top: -70px;
+      margin-left: 30px;
+    }
+    &.leftSide {
+      text-align: right;
+    }
+  }
+  &__img {
+    width:auto;
+    &:first-child {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+  &__content {
+    width: 21%;
+    @media screen and (max-width: 1400px){
+      width: 35%;
+    }
+    @media screen and (max-width: 960px){
+      width: 50%;
+    }
+    @media screen and (max-width: 768px){
+      width: 90%;
+      text-align: center;
+      order: 2;
+      margin:160px auto 0;
+    }
+  }
+  &__name {
+    width: 25%;
+    margin-bottom: -10%;
+    @media screen and (max-width: 1400px){
+      width: 15%;
+    }
+    @media screen and (max-width: 1200px){
+      margin-bottom:-20%;
+    }
+    @media screen and (max-width: 960px){
+      display: none;
+    }
+  }
+  &__title {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 700;
+    color: $title-color;
+    @media screen and (max-width: 640px){
+      font-size: 30px;
+      line-height: 45px;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 14px;
+    height: 14px;
+    background: url("../img/redDot.svg") no-repeat;
+    margin-left: 2px;
+    margin-bottom: 13px;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    color: $title-color;
+    margin:53px 0;
+  }
+  &__link {
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    color: $title-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:after {
+      content: '';
+      display: block;
+      width:185px;
+      height: 1px;
+      background: $title-color;
+      margin: 3px 0 0;
+      transition-duration: 0.3s;
+      @media screen and (max-width: 768px){
+        margin:3px auto 0;
+      }
+    }
+    &:hover {
+      &:after {
+        background: transparent;
+      }
+    }
+  }
+  &__background {
+    display: block;
+    font-size: 144px;
+    line-height: 150px;
+    font-weight: 900;
+    transform: rotate(-90deg);
+    color: #f1f6f9;
+    white-space: nowrap;
+    @media screen and (max-width: 1200px){
+      font-size: 120px;
+    }
+  }
+}
